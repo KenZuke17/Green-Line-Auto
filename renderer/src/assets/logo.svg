@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" role="img" aria-label="Green Line Auto Service logo">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+  </defs>
+  <rect width="360" height="120" rx="24" fill="white" />
+  <path d="M34 68 C36 54 52 42 74 42 H286 C308 42 324 54 326 68 L320 78 C318 90 306 100 292 100 H68 C54 100 42 90 40 78 Z" fill="url(#grad1)" />
+  <circle cx="88" cy="86" r="16" fill="#111827" />
+  <circle cx="88" cy="86" r="8" fill="#d1d5db" />
+  <circle cx="272" cy="86" r="16" fill="#111827" />
+  <circle cx="272" cy="86" r="8" fill="#d1d5db" />
+  <path d="M96 50 H132 L148 64 H212 L228 50 H264" stroke="#ffffff" stroke-width="8" stroke-linecap="round" fill="none" />
+  <path d="M72 52 Q80 40 100 42" stroke="#ffffff" stroke-width="6" fill="none" opacity="0.75" />
+  <path d="M288 52 Q280 40 260 42" stroke="#ffffff" stroke-width="6" fill="none" opacity="0.75" />
+  <path d="M244 36 C250 28 262 24 274 32" stroke="#22c55e" stroke-width="8" fill="none" />
+  <path d="M250 32 L258 22 L264 32" stroke="#22c55e" stroke-width="8" fill="none" />
+  <text x="32" y="30" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#065f46">Green Line</text>
+  <text x="32" y="54" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#0f172a">AUTO SERVICE</text>
+</svg>

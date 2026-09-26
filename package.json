@@ -1,0 +1,59 @@
+{
+	"name": "green-line-auto-service",
+	"productName": "Green Line Auto Service",
+	"private": true,
+	"description": "Electron desktop application for Green Line Auto Service",
+	"keywords": ["electron", "desktop", "auto", "sql.js"],
+	"version": "0.1.0",
+	"main": "main.js",
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"author": "Kavindu Gunasekara",
+	"license": "MIT",
+	"scripts": {
+		"copy-wasm": "node ./scripts/copy-wasm.js",
+		"approve-scripts": "npm approve-scripts --allow-scripts-pending",
+		"dev": "concurrently \"vite --host 127.0.0.1 --strictPort --port 5173\" \"wait-on http://127.0.0.1:5173 && electron .\"",
+		"build:renderer": "vite build",
+		"build:app": "npm run build:renderer && electron-builder",
+		"dist": "electron-builder --win --x64",
+		"start": "electron ."
+	},
+	"dependencies": {
+		"electron": "^25.4.1",
+		"sql.js": "^1.8.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-hook-form": "^7.45.1",
+		"zod": "^3.22.2",
+		"@hookform/resolvers": "^2.9.11",
+		"recharts": "^2.10.0"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-react": "^4.0.0",
+		"concurrently": "^8.2.0",
+		"electron-builder": "^24.6.0",
+		"vite": "^5.1.0",
+		"wait-on": "^7.0.1"
+	},
+	"build": {
+		"appId": "com.yourcompany.greenlineautoservice",
+		"productName": "Green Line Auto Service",
+		"files": [
+			"dist/",
+			"main.js",
+			"preload.js",
+			"db.js",
+			"sql-wasm.wasm",
+			"renderer/**",
+			"package.json"
+		],
+		"directories": {
+			"buildResources": "assets"
+		},
+		"win": {
+			"target": "nsis"
+		}
+	}
+}
