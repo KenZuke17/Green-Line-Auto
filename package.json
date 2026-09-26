@@ -2,14 +2,14 @@
 	"name": "green-line-auto-service",
 	"productName": "Green Line Auto Service",
 	"private": true,
-	"description": "Electron desktop application for Green Line Auto Service",
-	"keywords": ["electron", "desktop", "auto", "sql.js"],
+	"description": "React + Vite desktop application for Green Line Auto Service inventory and vehicle management",
+	"keywords": ["react", "vite", "electron", "auto-service", "vehicle-management", "inventory-management", "sql.js", "javascript"],
 	"version": "0.1.0",
 	"main": "main.js",
 	"engines": {
 		"node": ">=18.0.0"
 	},
-	"author": "Kavindu Gunasekara",
+	"author": "KenZuke17",
 	"license": "MIT",
 	"scripts": {
 		"copy-wasm": "node ./scripts/copy-wasm.js",
